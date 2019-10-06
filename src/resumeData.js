@@ -1,7 +1,7 @@
 let resumeData = {
     "imagebaseurl":"https://rbhatia46.github.io/",
     "name": "Talha B. Tariq",
-    "role": "Frontend Developer",
+    "role": "I build things for the web.",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
     "roleDescription": "I'm a software engineer based in Ann Arbor, MI specializing in building (and occasionally designing) exceptional, high-quality websites and applications.",
@@ -22,15 +22,15 @@ let resumeData = {
           "className":"fa fa-twitter"
         }
       ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "address":"India",
+    "aboutme":"I'm a software engineer based in Ann Arbor, MI specializing in building (and occasionally designing) exceptional, high-quality websites and applications.",
+    "address":"",
     "website":"https://talhabintariq.github.io",
     "education":[
       {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
+        "UniversityName":"GCU",
+        "specialization":"Computer Science",
         "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
+        "YearOfPassing":"2012",
         "Achievements":"Some Achievements"
       },
       {
