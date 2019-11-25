@@ -1,5 +1,5 @@
 let resumeData = {
-    "imagebaseurl":"https://rbhatia46.github.io/",
+    "imagebaseurl":"",
     "name": "Talha B. Tariq",
     "role": "I build things for the web.",
     "linkedinId":"Your LinkedIn Id",
@@ -15,16 +15,13 @@ let resumeData = {
           "name":"github",
           "url":"https://github.com/talhabintariq",
           "className":"fa fa-github"
-        },
-        {
-          "name":"skype",
-          "url":"https://github.com/talhabintariq",
-          "className":"fa fa-twitter"
         }
       ],
     "aboutme":"I'm a software engineer based in Ann Arbor, MI specializing in building (and occasionally designing) exceptional, high-quality websites and applications.",
-    "address":"",
-    "website":"https://talhabintariq.github.io",
+    "email": 'talhabintariq@gmail.com',
+    "github": "https://github.com/talhabintariq",
+    "website": "https://www.talhabintariq.com",
+    "githubPage":"https://talhabintariq.github.io",
     "education":[
       {
         "UniversityName":"GCU",
