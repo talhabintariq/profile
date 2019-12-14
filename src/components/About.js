@@ -1,7 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 export default class About extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
+
     return (
       <section id="about">
         <div className="row">
@@ -35,3 +38,11 @@ export default class About extends Component {
     );
   }
 }
+
+About.propTypes = {
+  resumeData: PropTypes.object,
+};
+
+About.defaultProps = {
+  resumeData: {},
+};
