@@ -1,7 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 export default class Resume extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
+
     return (
       <section id="resume">
         <div className="row education">
@@ -12,15 +15,15 @@ export default class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">
-            {resumeData.education &&
-              resumeData.education.map(item => {
+            {resumeData.education
+              && resumeData.education.map((item) => {
                 return (
                   <div className="row item">
                     <div className="twelve columns">
                       <h3>{item.UniversityName}</h3>
                       <p className="info">
                         {item.specialization}
-                        <span>&bull;</span>{" "}
+                        <span>&bull;</span>{' '}
                         <em className="date">
                           {item.MonthOfPassing} {item.YearOfPassing}
                         </em>
@@ -40,15 +43,15 @@ export default class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">
-            {resumeData.work &&
-              resumeData.work.map(item => {
+            {resumeData.work
+              && resumeData.work.map((item) => {
                 return (
                   <div className="row item">
                     <div className="twelve columns">
                       <h3>{item.CompanyName}</h3>
                       <p className="info">
                         {item.specialization}
-                        <span>&bull;</span>{" "}
+                        <span>&bull;</span>{' '}
                         <em className="date">
                           {item.MonthOfLeaving} {item.YearOfLeaving}
                         </em>
@@ -73,13 +76,11 @@ export default class Resume extends Component {
 
             <div className="bars">
               <ul className="skills">
-                {resumeData.skills &&
-                  resumeData.skills.map(item => {
+                {resumeData.skills
+                  && resumeData.skills.map((item) => {
                     return (
                       <li>
-                        <span
-                          className={`bar-expand ${item.skillname.toLowerCase()}`}
-                        ></span>
+                        <span className={`bar-expand ${item.skillname.toLowerCase()}`} />
                         <em>{item.skillname}</em>
                       </li>
                     );
@@ -92,3 +93,11 @@ export default class Resume extends Component {
     );
   }
 }
+
+Resume.propTypes = {
+  resumeData: PropTypes.object,
+};
+
+Resume.defaultProps = {
+  resumeData: {},
+};

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 export default class Testimonials extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
+
     return (
       <section id="testimonials">
         <div className="text-container">
@@ -13,17 +16,17 @@ export default class Testimonials extends Component {
               <div className="flexslider">
                 <ul className="slides">
                   {
-                    resumeData.testimonials && resumeData.testimonials.map((item)=>{
-                      return(
+                    resumeData.testimonials && resumeData.testimonials.map((item) => {
+                      return (
                         <li>
                           <blockquote>
                             <p>
-                            {item.description}
+                              {item.description}
                             </p>
                             <cite>{item.name}</cite>
                           </blockquote>
                         </li>
-                      )
+                      );
                     })
                   }
                 </ul>
@@ -32,6 +35,14 @@ export default class Testimonials extends Component {
           </div> {/* row ends */}
         </div>  {/* text-container ends */}
       </section>
-        );
+    );
   }
 }
+
+Testimonials.propTypes = {
+  resumeData: PropTypes.object,
+};
+
+Testimonials.defaultProps = {
+  resumeData: {},
+};

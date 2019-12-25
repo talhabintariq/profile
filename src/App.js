@@ -7,17 +7,18 @@ import Portfolio from './components/Portfolio';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header resumeData={resumeData}/>
-        <About resumeData={resumeData}/>
-        <Portfolio resumeData={resumeData}/>
-        <Resume resumeData={resumeData}/>
+        <Header resumeData={resumeData} />
+        <About resumeData={resumeData} />
+        <Portfolio resumeData={resumeData} />
+        <Resume resumeData={resumeData} />
         {/* <Testimonials resumeData={resumeData}/> */}
-        <ContactUs resumeData={resumeData}/>
-        <Footer resumeData={resumeData}/>
+        <ContactUs resumeData={resumeData} />
+        <Footer resumeData={resumeData} />
       </div>
     );
   }
