@@ -22,13 +22,13 @@ export default class About extends Component {
                 <p className="address">
                   <span>{resumeData.name}</span>
                   <br />
-                  <span><a href={`mailto:${resumeData.email}`}>{resumeData.email}</a></span>
+                  <span><a href={`mailto:${resumeData.email}`} target="_blank" rel="noopener noreferrer">{resumeData.email}</a></span>
                   <br />
-                  <span><a href={resumeData.github}>{resumeData.github}</a></span>
+                  <span><a href={resumeData.github} target="_blank" rel="noopener noreferrer">{resumeData.github}</a></span>
                   <br />
-                  <span><a href={resumeData.githubPage}>{resumeData.githubPage}</a></span>
+                  <span><a href={resumeData.githubPage} target="_blank" rel="noopener noreferrer">{resumeData.githubPage}</a></span>
                   <br />
-                  <span><a href={resumeData.website}>{resumeData.website}</a></span>
+                  <span><a href={resumeData.website} target="_blank" rel="noopener noreferrer">{resumeData.website}</a></span>
                 </p>
               </div>
             </div>
