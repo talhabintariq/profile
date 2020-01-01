@@ -30,14 +30,32 @@ const resumeData = {
       specialization: 'Computer Science',
       MonthOfPassing: 'Aug',
       YearOfPassing: '2012',
-      Achievements: 'Some Achievements',
     },
     {
-      UniversityName: 'Some University',
-      specialization: 'Some specialization',
+      UniversityName: 'University of North Alabama',
+      specialization: 'Exchange Fellowship',
       MonthOfPassing: 'Jan',
-      YearOfPassing: '2018',
-      Achievements: 'Some Achievements',
+      YearOfPassing: '2011',
+      Achievements: 'Studied under US Department of State’s Fellowship Global UGRAD Exchange Fellowship.',
+    },
+  ],
+  certifications: [
+    {
+      CertificationName: 'Microsoft Technology Associate',
+      exams: [
+        'Exam 98-375 HTML5 Application Development',
+        'Exam 98-382 JavaScript',
+      ],
+      MonthOfPassing: 'Aug',
+      YearOfPassing: '2012',
+    },
+    {
+      CertificationName: 'Microsoft Certified Solutions Associate',
+      exams: [
+        'Exam 70-480 Programming in HTML5 with JavaScript and CSS3',
+      ],
+      MonthOfPassing: 'Aug',
+      YearOfPassing: '2012',
     },
   ],
   work: [
