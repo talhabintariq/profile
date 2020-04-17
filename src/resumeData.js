@@ -47,15 +47,15 @@ const resumeData = {
         'Exam 98-382 JavaScript',
       ],
       MonthOfPassing: 'Aug',
-      YearOfPassing: '2012',
+      YearOfPassing: '2019',
     },
     {
       CertificationName: 'Microsoft Certified Solutions Associate',
       exams: [
         'Exam 70-480 Programming in HTML5 with JavaScript and CSS3',
       ],
-      MonthOfPassing: 'Aug',
-      YearOfPassing: '2012',
+      MonthOfPassing: 'December',
+      YearOfPassing: '2019',
     },
   ],
   work: [
@@ -77,13 +77,64 @@ const resumeData = {
   skillsDescription: 'Your skills here',
   skills: [
     {
-      skillname: 'HTML5',
+      skillname: 'html5',
+      percent: 95,
     },
     {
-      skillname: 'CSS',
+      skillname: 'css3',
+      percent: 95,
+    },
+    {
+      skillname: 'scss/sass',
+      percent: 95,
+    },
+    {
+      skillname: 'JavaScript',
+      percent: 95,
     },
     {
       skillname: 'Reactjs',
+      percent: 95,
+    },
+    {
+      skillname: 'Redux',
+      percent: 95,
+    },
+    {
+      skillname: 'StoryBook',
+      percent: 70,
+    },
+    {
+      skillname: 'TypeScript',
+      percent: 65,
+    },
+    {
+      skillname: 'jQuery',
+      percent: 55,
+    },
+    {
+      skillname: 'Jest',
+      percent: 95,
+    },
+    {
+      skillname: 'Enzyme',
+      percent: 95,
+    },
+    {
+      skillname: 'React Testing Library',
+      percent: 75,
+    },
+    {
+      skillname: 'SQL',
+      percent: 55,
+    },
+    {
+      skillname: 'WordPress',
+      percent: 50,
+    },
+    {
+      skillname: 'cPanel',
+      percent: 50,
     },
   ],
   portfolio: [

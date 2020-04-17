@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Progress } from 'antd';
 import PropTypes from 'prop-types';
 
 export default class Resume extends Component {
@@ -67,7 +68,7 @@ export default class Resume extends Component {
               })}
           </div>
         </div>
-        <div className="row work">
+        {/* <div className="row work">
           <div className="three columns header-col">
             <h1>
               <span>Work</span>
@@ -94,7 +95,7 @@ export default class Resume extends Component {
                 );
               })}
           </div>
-        </div>
+        </div>  */}
 
         <div className="row skill">
           <div className="three columns header-col">
@@ -111,10 +112,11 @@ export default class Resume extends Component {
                 {resumeData.skills
                   && resumeData.skills.map((item) => {
                     return (
-                      <li>
-                        <span className={`bar-expand ${item.skillname.toLowerCase()}`} />
+                      <>
+                        <span className={`${item.skillname.toLowerCase()}`} />
                         <em>{item.skillname}</em>
-                      </li>
+                        <Progress percent={item.percent} format={() => ''} /> 
+                      </>
                     );
                   })}
               </ul>
