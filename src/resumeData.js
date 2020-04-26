@@ -41,7 +41,7 @@ const resumeData = {
   ],
   certifications: [
     {
-      CertificationName: 'Microsoft Technology Associate',
+      CertificationName: 'MTA',
       exams: [
         'Exam 98-375 HTML5 Application Development',
         'Exam 98-382 JavaScript',
@@ -50,7 +50,7 @@ const resumeData = {
       YearOfPassing: '2019',
     },
     {
-      CertificationName: 'Microsoft Certified Solutions Associate',
+      CertificationName: 'MCSA',
       exams: [
         'Exam 70-480 Programming in HTML5 with JavaScript and CSS3',
       ],

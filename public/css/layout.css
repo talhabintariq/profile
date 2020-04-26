@@ -292,7 +292,7 @@ ul#nav li.current a { color: #F06000; }
 	text-align: left;
 }
 .bars .skills {
-  	margin-top: 36px;
+  	/* margin-top: 36px; */
    list-style: none;
 }
 .bars li {
@@ -926,8 +926,9 @@ call-to-action .button {
 
 footer {
    padding-top: 48px;
-   margin-bottom: 48px;
+   /* margin-bottom: 48px; */
    color: #303030;
+   background-color: black;
    font-size: 14px;
    text-align: center;
    position: relative;
