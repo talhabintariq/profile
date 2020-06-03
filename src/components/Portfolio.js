@@ -1,35 +1,39 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import { Card } from "antd";
+import PropTypes from "prop-types";
 
 export default class Porfolio extends Component {
   render() {
     const { resumeData } = this.props;
+    const { Meta } = Card;
 
     return (
       <section id="portfolio">
         <div className="row">
           <div className="twelve columns collapsed">
             <h1>Check Out Some of My Works.</h1>
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              {
-                resumeData.portfolio && resumeData.portfolio.map((item) => {
+            <div
+              id="portfolio-wrapper"
+              className="bgrid-quarters s-bgrid-thirds cf"
+            >
+              {resumeData.portfolio &&
+                resumeData.portfolio.map((item) => {
                   return (
-                    <div className="columns portfolio-item">
-                      <div className="item-wrap">
-                        <a href="#modal-01">
-                          <img src={`${item.imgurl}`} className="item-img" alt="" />
-                          <div className="overlay">
-                            <div className="portfolio-item-meta">
-                              <h5>{item.name}</h5>
-                              <p>{item.description}</p>
-                            </div>
-                          </div>
-                        </a>
+                    <>
+                      <div className="site-card-border-less-wrapper">
+                        <Card
+                          title={item.title}
+                          bordered={false}
+                          className="card"
+                        >
+                          <p>Card content</p>
+                          <p>Card content</p>
+                          <p>Card content</p>
+                        </Card>
                       </div>
-                    </div>
+                    </>
                   );
-                })
-              }
+                })}
             </div>
           </div>
         </div>
