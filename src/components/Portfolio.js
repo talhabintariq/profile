@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 export default class Porfolio extends Component {
   render() {
     const { resumeData } = this.props;
-    const { Meta } = Card;
 
     return (
       <section id="portfolio">
@@ -19,19 +18,11 @@ export default class Porfolio extends Component {
               {resumeData.portfolio &&
                 resumeData.portfolio.map((item) => {
                   return (
-                    <>
-                      <div className="site-card-border-less-wrapper">
-                        <Card
-                          title={item.title}
-                          bordered={false}
-                          className="card"
-                        >
-                          <p>Card content</p>
-                          <p>Card content</p>
-                          <p>Card content</p>
-                        </Card>
-                      </div>
-                    </>
+                    <Card title={item.title} bordered={false} className="card">
+                      <p>Card content</p>
+                      <p>Card content</p>
+                      <p>Card content</p>
+                    </Card>
                   );
                 })}
             </div>

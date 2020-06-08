@@ -596,6 +596,7 @@ ul#nav li.current a {
 .card {
   width: 180px;
   float: left;
+  margin: 15px !important;
 }
 
 .portfolio-item .item-wrap .overlay {
@@ -1048,7 +1049,6 @@ call-to-action .button {
   margin: 12px 0;
   color: #ebeeee;
   display: inline-block;
-  float: left;
   width: 26%;
 }
 #contact input,
